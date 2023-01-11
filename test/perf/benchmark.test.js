@@ -3,7 +3,7 @@ const crypto = require("node:crypto");
 const nodeRsCrc32c = require('@node-rs/crc32').crc32c;
 const sse42Crc = require('sse4_crc32').sse42_crc;
 const tableCrc = require('sse4_crc32').table_crc;
-const jsCrc32c = require('../impls/js_crc32c').calculate;
+const jsCrc32c = require('../../impls/js_crc32c').calculate;
 const jsCrc32 = require('buffer-crc32').unsigned;
 
 const tests = [{
