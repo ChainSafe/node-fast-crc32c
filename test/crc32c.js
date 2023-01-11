@@ -1,3 +1,4 @@
+const {expect} = require('chai');
 const sets = require('./sets.json');
 
 sets.buffer.cases.forEach(function(cs) {
@@ -18,13 +19,13 @@ function testCalculate(crc32) {
       const set = sets[type];
       set.cases.forEach(function(cs) {
         it(`should digest "${cs.input}" correctly`, function() {
-          crc32.calculate(cs.input).should.eql(cs.want);
+          expect(crc32.calculate(cs.input)).to.be.equal(cs.want);
         });
       });
       it(`should digest all ${type} correctly`, function() {
-        set.cases.reduce(function(prev, cs) {
+        expect(set.cases.reduce(function(prev, cs) {
           return crc32.calculate(cs.input, prev);
-        }, 0).should.eql(set.want);
+        }, 0)).to.be.equal(set.want);
       })
     }
   };

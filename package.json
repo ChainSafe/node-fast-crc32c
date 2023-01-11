@@ -10,12 +10,12 @@
   },
   "main": "./loader",
   "optionalDependencies": {
-    "@node-rs/crc32": "^0.1.7"
+    "sse4_crc32": "^7.0.0"
   },
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "benchmark": "node benchmark"
+    "benchmark": "benchmark benchmark"
   },
   "keywords": [
     "crc",
@@ -26,13 +26,13 @@
     "sse4.2"
   ],
   "devDependencies": {
-    "benchtable": "^0.1.0",
+    "@dapplion/benchmark": "^0.2.4",
+    "@node-rs/crc32": "^1.5.1",
     "buffer-crc32": "^0.2.13",
+    "chai": "^4.3.7",
     "coveralls": "^3.0.6",
-    "mocha": "^6.2.1",
+    "mocha": "^10.0.0",
     "nyc": "^14.1.1",
-    "random-string": "^0.2.0",
-    "should": "^13.2.3",
-    "sse4_crc32": "^6.0.1"
+    "random-string": "^0.2.0"
   }
 }

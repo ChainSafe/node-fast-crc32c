@@ -1,5 +1,5 @@
-const bindings = require('@node-rs/crc32');
+const bindings = require('sse4_crc32');
 
 module.exports = {
-  calculate: bindings.crc32c,
+  calculate: bindings.calculate,
 };
