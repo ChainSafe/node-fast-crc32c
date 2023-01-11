@@ -13,7 +13,8 @@
     "sse4_crc32": "^7.0.0"
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha",
+    "test:unit": "nyc --reporter=html --reporter=text mocha test/unit/*.test.js",
+    "test:mem": "node test/mem/mem_test.test.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "benchmark": "benchmark benchmark"
   },

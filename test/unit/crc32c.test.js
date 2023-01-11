@@ -6,11 +6,11 @@ sets.buffer.cases.forEach(function(cs) {
 });
 
 describe('crc32c.js', function() {
-  describe('calculate()', testCalculate(require('../impls/js_crc32c')));
+  describe('calculate()', testCalculate(require('../../impls/js_crc32c')));
 });
 
 describe('fast-crc32c', function() {
-  describe('calculate()', testCalculate(require('../')));
+  describe('calculate()', testCalculate(require('../../loader')));
 });
 
 function testCalculate(crc32) {
