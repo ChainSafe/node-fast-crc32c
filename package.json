@@ -9,6 +9,10 @@
     "url": "git@github.com:ChainSafe/node-fast-crc32c.git"
   },
   "main": "./loader",
+  "files":[
+    "loader.js",
+    "impls/*.js"
+  ],
   "optionalDependencies": {
     "@node-rs/crc32": "^1.6.0"
   },
