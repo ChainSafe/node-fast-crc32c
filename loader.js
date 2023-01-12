@@ -1,6 +1,6 @@
 module.exports = (function() {
   const impls = [
-    './impls/sse4_crc32c',
+    './impls/node_rs_crc32c',
     './impls/js_crc32c',
   ];
   for (const impl of impls) {

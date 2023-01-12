@@ -10,7 +10,7 @@
   },
   "main": "./loader",
   "optionalDependencies": {
-    "sse4_crc32": "^7.0.0"
+    "@node-rs/crc32": "^1.6.0"
   },
   "scripts": {
     "test:unit": "nyc --reporter=html --reporter=text mocha test/unit/*.test.js",
@@ -28,7 +28,7 @@
   ],
   "devDependencies": {
     "@dapplion/benchmark": "^0.2.4",
-    "@node-rs/crc32": "^1.5.1",
+    "sse4_crc32": "^7.0.0",
     "buffer-crc32": "^0.2.13",
     "chai": "^4.3.7",
     "coveralls": "^3.0.6",
