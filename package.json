@@ -1,7 +1,7 @@
 {
   "name": "@chainsafe/fast-crc32c",
   "description": "CRC32C algorithm with hardware acceleration and software fallback.",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "author": "Xiaoyi Shi <ashi009@gmail.com>",
   "license": "MIT",
   "repository": {
