@@ -1,5 +1,5 @@
 declare const impl: {
-  calculate(input: Buffer, initial?: number): number
+  calculate(input: Uint8Array, initial?: number): number
 }
 
 export = impl

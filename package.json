@@ -16,7 +16,7 @@
     "index.d.ts"
   ],
   "optionalDependencies": {
-    "@node-rs/crc32": "^1.6.0"
+    "@node-rs/crc32": "^1.10.6"
   },
   "scripts": {
     "test:unit": "nyc --reporter=html --reporter=text mocha test/unit/*.test.js",
